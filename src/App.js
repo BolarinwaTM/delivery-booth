@@ -1,5 +1,6 @@
 import * as Unicons from '@iconscout/react-unicons';
 import main from './main.js';
+import Truck from './img/truck.png';
 import './App.css';
 
 function App() {
@@ -61,11 +62,35 @@ function App() {
             <Unicons.UilGithubAlt size="20" className="" />
             </a>
           </div>
-        </div>
-        </div>
-      </section>
-    </main>
+
+          <div className="home__img">
+      <img src={Truck} alt="truck" className="home__blob-img"/>
+      </div>
+
+      <div className="home__data">
+        <h1 className="home__title">
+        The easiest, quickest way to launch a logistics business from scratch
+        </h1>
+        <p className="home__description">
+        Crafted with the major problems facing 1000+ logistics businesses from all over Africa.
+        </p>
+        <a href="#contact" className="button button--flex">
+          Join DeliveryBooth <Unicons.UilMessage size="20" className="button__icon" />
+        </a>
+      </div>
     </div>
+
+    <div className="home__scroll">
+      <a href="#about" className="home__scroll-button button--flex">
+      <Unicons.UilMouseAlt size="20" className="home__scroll-mouse" />
+      <span className="home__scroll-name">Scroll Down</span>
+      <Unicons.UilArrowDown size="20" className="home__scroll-arrow" />
+      </a>
+    </div>
+    </div>
+    </section>
+  </main>
+  </div>
   );
 }
 
